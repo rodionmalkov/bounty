@@ -1,16 +1,18 @@
 :root {
   // COLOR
 
-  --simple-black: #000;
+  --black: #000;
+  --grey: #939393;
+  --accent: #618674;
+  --accent-light: #c3d3d0;
+  --red: #d95d77;
 
-  --black: #1e272e;
-  --white: #f5f6fa;
-
-  --blue: #0f2499;
-  --blue-accent: #041369;
-  --light-green: #d4ffba;
+  --bg: #f5f5f5;
+  --bg-elem: #dbd7d3;
+  --bg-lines: #f0eeec;
 
   // FONTS
 
-  --main-fonts: "Poppins", Helvetica, sans-serif;
+  --main-fonts: "PoiretOne", Helvetica, sans-serif;
+  --accent-fonts: "Iglets", Helvetica, sans-serif;
 }
