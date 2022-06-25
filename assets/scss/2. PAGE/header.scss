@@ -1,0 +1,9 @@
+.header {
+  padding: 40px 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    justify-content: space-between;
+  }
+}
