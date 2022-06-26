@@ -1,10 +1,9 @@
 var swiper = new Swiper(".carousel", {
   pagination: {
     el: ".swiper-pagination",
-    type: "progressbar",
+    dynamicBullets: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  autoplay: {
+    delay: 5000,
   },
 });

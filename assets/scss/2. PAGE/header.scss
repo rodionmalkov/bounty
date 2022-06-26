@@ -2,7 +2,8 @@
   position: absolute;
   inset: 0;
   padding: 40px 0;
-  z-index: 1000;
+  max-height: 48px;
+  z-index: 100;
 
   &__wrapper {
     display: grid;
