@@ -3,7 +3,27 @@
   gap: 75px;
   justify-content: flex-end;
   margin-right: 125px;
+}
 
-  &__item {
+.burger {
+  display: none;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 630px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: grid;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 100px;
   }
 }
