@@ -10,6 +10,7 @@
   &__item {
     width: 100%;
     position: relative;
+    overflow: hidden;
   }
 
   &__title {
@@ -62,17 +63,33 @@
     &__item--1 &__title {
       left: 100px;
     }
+    &__item--2 &__title {
+      left: 600px;
+    }
+    &__item--2 &__img {
+      left: 70px;
+    }
   }
 }
 
 @media (max-width: 1300px) {
   .carousel {
     height: 800px;
-    &__item--1 &__title {
+    &__item--1 &__title,
+    &__item--2 &__title {
       font-size: 110px;
     }
     &__item--1 &__img {
       right: -50px;
+    }
+
+    &__item--2 &__title {
+      left: 450px;
+    }
+
+    &__item--2 &__img {
+      left: 0px;
+      bottom: -50px;
     }
   }
 }
@@ -85,18 +102,32 @@
     &__item--1 &__img {
       right: -100px;
     }
+    &__item--2 &__title {
+      left: 300px;
+    }
   }
 }
 
 @media (max-width: 768px) {
   .carousel {
-    height: 700px;
+    height: 100vh;
     &__item--1 &__title {
       font-size: 80px;
+      bottom: 40px;
     }
     &__item--1 &__img {
       height: 700px;
-      bottom: -110px;
+      bottom: -40px;
+    }
+
+    &__item--2 &__title {
+      left: 260px;
+      bottom: 0;
+      top: 120px;
+      font-size: 86px;
+    }
+    &__item--2 &__img {
+      bottom: -200px;
     }
   }
 }
@@ -105,13 +136,19 @@
   .carousel {
     &__item--1 &__title {
       font-size: 60px;
-      bottom: 70px;
       left: 30px;
     }
     &__item--1 &__img {
       height: 760px;
-      bottom: -60px;
       right: -200px;
+    }
+    &__item--2 &__title {
+      left: 160px;
+      font-size: 70px;
+      top: 150px;
+    }
+    &__item--2 &__img {
+      left: -64px;
     }
   }
 }
@@ -120,20 +157,34 @@
   .carousel {
     &__item--1 &__title {
       font-size: 50px;
-      left: 30px;
+      left: 16px;
     }
     &__item--1 &__img {
       right: -280px;
+    }
+    &__item--2 &__title {
+      left: 156px;
+      font-size: 46px;
+      top: 210px;
+    }
+    &__item--2 &__img {
+      left: -90px;
+      bottom: -180px;
     }
   }
 }
 
 @media (max-width: 400px) {
   .carousel {
-    height: 600px;
     &__item--1 &__title {
       font-size: 40px;
-      left: 30px;
+    }
+    &__item--2 &__title {
+      left: 124px;
+    }
+    &__item--2 &__img {
+      left: -100px;
+      bottom: -152px;
     }
   }
 }
