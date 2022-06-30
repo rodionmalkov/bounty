@@ -8,6 +8,7 @@
 .burger {
   display: none;
   align-self: center;
+  z-index: 200;
 }
 
 @media (max-width: 768px) {
@@ -19,6 +20,20 @@
 @media (max-width: 630px) {
   .nav {
     display: none;
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-rgba);
+    font-weight: 400;
+    font-size: 40px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding-top: 147px;
+  }
+  .nav__item {
+    margin-right: 43px;
+    z-index: 100;
   }
   .burger {
     display: grid;
@@ -26,4 +41,8 @@
     justify-content: flex-end;
     margin-right: 100px;
   }
+}
+
+.menu-open {
+  display: flex;
 }

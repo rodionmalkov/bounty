@@ -7,3 +7,10 @@ let swiper = new Swiper(".carousel", {
     delay: 5000,
   },
 });
+
+const openMobileMenu = function () {
+  let mainMenu = document.querySelector(".nav");
+  let mainMenuBtn = document.querySelector(".burger");
+
+  mainMenu.classList.toggle("menu-open");
+};
